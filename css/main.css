@@ -17,6 +17,14 @@ body {
   margin: auto;
 }
 
+h1 {
+  padding-top: 8rem;
+  padding-left: 2.5rem;
+  margin: 0;
+  grid-column: 2;
+  grid-row: 1;
+}
+
 nav {
   background-color: #000;
 }
@@ -30,7 +38,10 @@ nav ul {
 }
 
 nav ul li {
-  padding: 0.5em;
+  padding-left: 3em;
+  padding-right: 3em;
+  padding-top: .5em;
+  padding-bottom: .5em;
 }
 
 nav ul li a {
@@ -40,7 +51,8 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  text-decoration: underline;
+  color: #FFFF33;
+  font-family: 'Monoton', cursive;
 }
 
 .background-image {
@@ -50,4 +62,48 @@ nav ul li a:hover {
   background-position: center;
   background-size: cover;
   background-image: url( 'https://www.lifewire.com/thmb/2eb72KeTI208avqjSp9j32DtCTk=/1067x800/smart/filters:no_upscale()/vladstudio-library-wallpaper-5919cd763df78cf5fa3d7e27.jpg' );
+}
+.about-me {
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr;
+  grid-template-rows: auto 1fr 1fr;
+}
+
+.about-me-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0 2.5em 0 2.5em;
+}
+
+.about-me-content img {
+  max-width: 20%;
+  border-radius: 50%;
+}
+
+.about-me-content img:hover {
+  box-shadow: 8px 8px 8px #39FF14;
+}
+
+div:nth-child(2) {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+div:nth-child(1) {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+
+
+
+footer {
+  background-color: #000;
+  list-style-type: none;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  padding: .75em 0;
+  color: #fff;
 }
